@@ -16,17 +16,17 @@ const Navbar = () => {
 
 			{/* menu */}
 			<ul className="hidden md:flex gap-4">
-				<Link to="home" duration={300} smooth={true}>
+				<Link to="home" duration={300} smooth={true} spy>
 					<li className="font-bold hover:border-b-2 py-2 hover:text-orange-700 transition-all duration-200">
 						Home
 					</li>
 				</Link>
-				<Link to="about" duration={300} smooth={true}>
+				<Link to="about" duration={300} smooth={true} spy>
 					<li className="font-bold hover:border-b-2 py-2 hover:text-orange-700 transition-all duration-200">
 						About Me
 					</li>
 				</Link>
-				<Link to="skills" duration={300} smooth={true}>
+				<Link to="skills" duration={300} smooth={true} spy>
 					<li className="font-bold hover:border-b-2 py-2 hover:text-orange-700 transition-all duration-200">
 						Skills
 					</li>
