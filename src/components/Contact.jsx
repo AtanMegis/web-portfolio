@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
 	const ref = useRef();
 	const [success, setSuccess] = useState(null);
+	const [error, setError] = useState(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -17,11 +18,16 @@ const Contact = () => {
 			)
 			.then(
 				(result) => {
-					console.log(result.text);
+					// console.log(result.text);
+					setError(false);
 					setSuccess(true);
+					setTimeout(() => {
+						setSuccess(false);
+					}, 3000);
 				},
 				(error) => {
-					console.log(error.text);
+					// console.log(error.text);
+					setError("something wrong happened");
 					setSuccess(false);
 				}
 			);
@@ -71,6 +77,13 @@ const Contact = () => {
 						<div className="flex justify-center sm:items-center">
 							<p className="text-pink-600 sm:text-2xl text-xl">
 								"Your message has been sent succesfully"
+							</p>
+						</div>
+					)}
+					{error && (
+						<div className="flex justify-center sm:items-center">
+							<p className="text-pink-600 sm:text-2xl text-xl">
+								"Something Wrong Happened !"
 							</p>
 						</div>
 					)}
