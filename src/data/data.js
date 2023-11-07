@@ -2,6 +2,7 @@ import trstdly from "../assets/trstdly.PNG";
 import someting from "../assets/someting.PNG";
 import netflix from "../assets/netflix.PNG";
 import gallery from "../assets/gallery.PNG";
+import youtube from "../assets/ytbImg.PNG";
 
 export const data = [
 	{
@@ -32,5 +33,12 @@ export const data = [
 		github:
 			"https://github.com/AtanMegis/CapstoneMegis/tree/9a41d2b784371680ac3a3889132702f979d0ddb6",
 		live: "https://someting-hzt7t9q4j-atanmegis.vercel.app/home",
+	},
+	{
+		id: 5,
+		name: "Youtube Clone",
+		image: youtube,
+		github: "https://github.com/AtanMegis/ytbClone",
+		live: "https://ytb-clone-five.vercel.app",
 	},
 ];
