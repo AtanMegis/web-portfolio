@@ -30,9 +30,8 @@ export const data = [
 		id: 4,
 		name: "Someting Web",
 		image: someting,
-		github:
-			"https://github.com/AtanMegis/CapstoneMegis/tree/9a41d2b784371680ac3a3889132702f979d0ddb6",
-		live: "https://someting-hzt7t9q4j-atanmegis.vercel.app/home",
+		github: "https://github.com/AtanMegis/CapstoneMegis",
+		live: "https://someting.vercel.app/home",
 	},
 	{
 		id: 5,
